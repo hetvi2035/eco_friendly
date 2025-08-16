@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Portal | EcoFriendly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+  <div class="logo">🌿</div>
+  <div class="site-title" style="font-size: 22px;">Go Green Gracefully | Let's Recycle</div>
+  <nav class="nav-menu" style="font-size: 22px;">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login/Register</a>
+    <a href="profile.html">Profile</a>
+    <a href="setting.html">Setting</a>
+    <a href="collaboration.html">Collaborations</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="wasteportal.html">Waste Portal</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+  <h2 style="font-size: 22px;">Waste Contribution</h2>
+  <form action="contribute.php" method="POST">
+    <select name="waste_type" required>
+      <option>Plastics</option>
+      <option>Glass</option>
+      <option>Metal</option>
+      <option>E-Waste</option>
+      <option>Wood</option>
+      <option>Paper</option>
+      <option>Organic Waste</option>
+    </select><br>
+    <input type="number" name="amount" placeholder="Amount (Kg)" required><br>
+    <input type="text" name="city" placeholder="City/Area" required><br>
+    <select name="sunday">
+      <option>1st Sunday</option>
+      <option>2nd Sunday</option>
+      <option>3rd Sunday</option>
+      <option>4th Sunday</option>
+    </select><br>
+    <button type="submit" style="font-size: 22px;">Submit</button>
+  </form>
+
+  <h3 style="font-size: 22px;">Collection Info</h3>
+  <p style="font-size: 22px;">Your waste will be collected on the selected Sunday.</p>
+
+  <h3 style="font-size: 22px;">Payment UPI</h3>
+  <p style="font-size: 22px;">eco@upi</p>
+
+  <h3 style="font-size: 22px;">Certificate</h3>
+  <p style="font-size: 22px;">Green Initiative Certificate available upon active participation!</p>
+
+  <footer style="font-size: 22px;">
+    @2025 EcoFriendly | Let's Recycle | Zero Waste
+  </footer>
+
+</body>
+</html>

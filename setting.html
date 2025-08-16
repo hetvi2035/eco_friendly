@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings | EcoFriendly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+  <div class="logo">🌿</div>
+  <div class="site-title" style="font-size: 22px;">Go Green Gracefully | Let's Recycle</div>
+  <nav class="nav-menu"  style="font-size: 22px;">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login/Register</a>
+    <a href="profile.html">Profile</a>
+    <a href="setting.html">Setting</a>
+    <a href="collaboration.html">Collaborations</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="wasteportal.html">Waste Portal</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+  <h2>Settings</h2>
+  
+  <label for="language" style="font-size: 22px;">Select Language:</label>
+  <select style="font-size: 22px" id="language">
+    <option style="font-size: 22px;">English</option>
+    <option style="font-size: 22px;">Hindi</option>
+    <option style="font-size: 22px;">Gujarati</option>
+  </select><br><br>
+
+  <label for="theme" style="font-size: 22px;">Select Theme:</label>
+  <select style="font-size: 22px" id="theme" onchange="changeTheme(this.value)">
+    <option value="light" style="font-size: 22px;">Light</option>
+    <option value="dark" style="font-size: 22px;">Dark</option>
+  </select>
+
+  <script>
+    function changeTheme(mode) {
+      if (mode === 'dark') {
+        document.body.style.backgroundColor = '#222';
+        document.body.style.color = 'white';
+      } else {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+      }
+    }
+  </script>
+  <footer style="font-size: 22px;">
+    @2025 EcoFriendly | Let's Recycle | Zero Waste
+  </footer>
+</body>
+</html>
